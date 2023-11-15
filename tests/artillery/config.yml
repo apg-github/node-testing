@@ -1,0 +1,15 @@
+config:
+  target: "http://localhost:3000/api"
+  tls:
+    rejectUnauthorized: false
+  http:
+    timeout: 10
+  phases:
+    - duration: 10
+      arrivalRate: 10
+scenarios:
+  - flow:
+    - get:
+        url: "/entries"
+    - get:
+        url: "/entry/643293e604c397f87510a4cf"

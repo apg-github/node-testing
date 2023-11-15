@@ -1,0 +1,31 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "license": "MIT",
+  "engines": {
+    "node": "=16.16.0",
+    "npm": "=8.13.2"
+  },
+  "scripts": {
+    "test:testcafe": "testcafe chrome ./testcafe",
+    "test:cypress:run": "cypress run",
+    "test:cypress:open": "cypress open",
+    "test:artillery": "artillery run artillery/config.yml",
+    "test:autocannon": "node autocannon/index.js",
+    "test:cucumber": "npx cucumber-js",
+    "test:supertest": "npx jest ./supertest"
+  },
+  "devDependencies": {
+    "artillery": "2.0.0-31",
+    "autocannon": "7.10.0",
+    "cypress": "9.2.1",
+    "cypress-image-snapshot": "4.0.1",
+    "jest": "29.5.0",
+    "supertest": "6.3.3",
+    "testcafe": "2.5.0"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "9.1.0",
+    "@faker-js/faker": "7.6.0"
+  }
+}

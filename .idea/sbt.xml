@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaSbtSettings">
+    <option name="customVMEnabled" value="true" />
+    <option name="customVMPath" value="$USER_HOME$/.sdkman/candidates/java/17-open" />
+    <option name="maximumHeapSize" value="9090" />
+    <option name="vmParameters" value="-XX:+UseG1GC -Xss2M" />
+  </component>
+</project>
